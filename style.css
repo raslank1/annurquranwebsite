@@ -23,23 +23,23 @@ body{
 @media screen and (max-width: 768px) {
   .main__container {
     padding: 10px;
-  }
-
-  .main__content h1,
-  .main__content h2,
-  .main__content h3,
-  .main__content h4 {
-    font-size: 1.2rem;
-  }
-
-  .main__content p {
-    font-size: 1rem;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .signup {
-    width: 90vw;
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .main__content p {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
     height: auto;
   }
 }
@@ -91,15 +91,15 @@ body{
   }
 
 
-  .signup {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;  /* Adjust for responsiveness */
-  height: auto;
-  }
+ .signup {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
 
 
  .imgupload form {
@@ -114,6 +114,9 @@ body{
   }
 
   img {
-    display: block;
-    margin: 0 auto;
-  }
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
