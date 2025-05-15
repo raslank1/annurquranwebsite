@@ -1,0 +1,93 @@
+body{
+  background-image: url(Ornate\ WhiteGreen.jpg);
+}
+
+  
+
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #e9e9e9;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    outline: 7px solid rgb(42,145,132);
+  }
+
+  .main__content h1 {
+    font-size: 2rem;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .main__content h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+    margin-top: 70px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  .main__content h2::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgb(42, 145, 132);
+  }
+
+  .main__content h3 {
+    font-size: 1.4rem;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .main__content h4 {
+    font-size: 1.4rem;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .main__content p {
+    font-size: 1.1rem;
+    align-items: center;
+    justify-self: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  .signup {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 2vh;
+    width: 30vh;
+  }
+
+
+ .imgupload form {
+   margin-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgupload [type="file"], button {
+    margin: 0 10px; /* Optional: Adds space between the input and button */
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
